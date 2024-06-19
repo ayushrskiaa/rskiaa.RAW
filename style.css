@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* loader */
+
+
+/* end */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: rgb(236, 182, 31); 
+    border-radius: 0px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(236, 182, 31); 
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(270, 182, 50); 
+  }
+
+
+
+body{
+    background-image: url("bg-img/bg1.jpg");
+    align-items: center;
+    text-align: center;
+}
+
+
+.main-img img{
+    margin-top: 0;
+    width: 100%;
+}
+
+
+.navbar {
+    color: rgb(255, 255, 255);
+
+    z-index: 100;
+    width: 100%;
+    /* position: sticky; */
+    height: 80px;
+    display: inline-block;
+    /* display: flex; */
+     background-color: rgb(255, 174, 0);
+    /* opacity: 0.5; */ 
+    /* background: transparent; */
+    font-family:'Ubuntu',sans-serif;
+    /* font-size: 2vw; */
+    font-weight: 500;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.name {
+    padding-left: 20px;
+   
+    /* padding-top: 20px; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 6vw;
+    color: white;
+
+}
+
+.name .raw {
+    color: rgba(0, 0, 0, 0.863);
+    opacity: 100;
+    z-index: 99;
+    
+}
+
+.navbar-left-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+.navbar-left-right li {
+    display: inline-block;
+    padding: 2vw;
+}
+
+.element {
+    margin-left: 25px;
+    font-size: 1.5vw;
+    /* padding: 20px; */
+    font-weight: 900;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.element:nth-child(3) {
+    margin-right: 10px;
+}
+
+.navbar-left-right img {
+    width: 100px;
+    height: 80px;
+}
+.navbar button{
+    cursor: pointer;
+    padding: 10px 20px;
+font-size: 1vw;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+/* .main-text{
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    display: inline-block;
+    align-items: center;
+   padding: 20px;
+} */
+
+.box {
+    margin-top: 75vh;
+    background: url(bg-img/janita-sumeiko-ZK1WQDMQvik-unsplash.jpg);
+    /* padding: 2%; */
+    color: aliceblue;
+    /* height: 100vh; */
+height: 70vh;
+    /* border: 2px solid black; */
+    object-fit: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    width:95vw ;
+    border-radius: 20px;
+    margin-left: 2vw;
+    text-align: center;
+    /* display:block; */
+}
+
+.creativity{
+    font-size: 3.8vw;
+    /* position: absolute; */
+    /* font-family: 'inter',sans-serif; */
+    letter-spacing: 6vw;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-left: 5vw;
+    border-radius: 3vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+   
+}
+
+.boxes {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow:  100px 100px 100px 1px rgb(255, 255, 255) inset;
+    /* align-items: center; */
+    /* border: 2px solid rgb(255, 251, 0); */
+    border: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 33%;
+    height: 20vh;
+    /* background: url(top-view-photography-accesories-with-copy-space.jpg); */
+    background-color: black;
+    /* object-fit: fill; */
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 10vh;
+}
+
+
+@media (max-width: 550px) {
+    .navbar-left-right {
+        /* display: flex; */
+        align-items: center;
+       /* border-bottom: 2px solid white; */
+       width: 100%;
+
+        /* justify-content: center; */
+    }
+
+    .navbar-left-right li {
+        /* display: inline-block; */
+        padding: 2px;
+        margin-top: 20px;
+        margin-left: 2vw;
+        
+        justify-content: center;
+        font-size: 12px;
+
+    }
+    .navbar{
+        padding-bottom: 0vh;
+    }
+    .navbar-left-right li menu-icon{
+        display: none;
+    }
+    .element {
+        margin-left: 100px;
+        padding: 20px;
+        /* z-index: 999; */
+    }
+    
+    .element:nth-child(3) {
+        margin-right: 0px;
+    }
+    .navbar button{
+        display: none;
+    }
+
+.name{
+    padding-top: 20px;
+    font-size: 8vw;
+}
+    .box {
+        margin-top: 50vh;
+        height: 95vh;
+        width:95vw ;
+        display: inline-block;
+       margin-left: 2vw;
+    }
+    .boxes {
+        margin-left: 14%;
+        margin-top: 5%;
+       
+        border-radius: 15px;
+     font-size: 7vw;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display:flex;
+        /* width: 33%; */
+        width: 70vw;
+        height: 20vh;
+        background-color: rgb(0, 0, 0);
+        /* background: url(top-view-photography-accesories-with-copy-space.jpg); */
+        /* object-fit: fill; */
+        /* text-align: center; */
+    }
+    
+   
+   
+}
